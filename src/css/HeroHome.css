@@ -1,0 +1,155 @@
+/* =========================================
+   HERO SECTION BASE
+========================================= */
+
+.hero-home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* =========================================
+     VIDEO BACKGROUND
+  ========================================= */
+  
+  .hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+  
+    z-index: 1;
+  }
+  
+  /* =========================================
+     OVERLAY FOR READABILITY
+  ========================================= */
+  
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 2;
+  }
+  
+  /* =========================================
+     HERO CONTENT
+  ========================================= */
+  
+  .hero-content {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+  
+    max-width: 900px;
+    padding: 0 20px;
+  }
+  
+  .hero-content h1 {
+    margin-bottom: 20px;
+  }
+  
+  .hero-content p {
+    max-width: 700px;
+    margin: 0 auto 30px;
+  }
+  
+  /* CTA spacing */
+  .hero-btn {
+    margin-top: 10px;
+  }
+  
+  /* =========================================
+     TEXT ANIMATION (FADE + SLIDE)
+     CSS only → best performance
+  ========================================= */
+  
+  .animate-hero {
+    animation: heroFadeUp 1.2s ease forwards;
+  }
+  
+  @keyframes heroFadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* ===============================
+   BUTTON ANIMATIONS
+================================ */
+
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(35px);
+  animation: fadeUp 1.1s ease forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-btn-anim {
+  animation: buttonPop 1.2s ease forwards;
+  animation-delay: 0.6s;
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+@keyframes buttonPop {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+  /* =========================================
+     MOBILE PERFORMANCE OPTIMIZATION
+  ========================================= */
+  
+  @media (max-width: 768px) {
+    .hero-home {
+      height: 90vh;
+    }
+  
+    .hero-content h1 {
+      font-size: 40px;
+    }
+  
+    .hero-content p {
+      font-size: 16px;
+    }
+  
+    /* Reduce overlay opacity for mobile clarity */
+    .hero-overlay {
+      background: rgba(0, 0, 0, 0.6);
+    }
+  }
+  
+  /* Very small devices */
+  @media (max-width: 480px) {
+    .hero-content h1 {
+      font-size: 34px;
+    }
+  
+    .hero-content p {
+      font-size: 15px;
+    }
+  }
+  

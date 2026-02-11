@@ -1,0 +1,224 @@
+/* =================================================
+   RESET (removes browser default spacing & sizing)
+   This makes layout consistent in all browsers
+================================================= */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* =================================================
+   THEME COLORS (global color variables)
+   We define black & white only once here
+   Later if you change here, whole site updates
+================================================= */
+
+:root {
+  --black: #000000;
+  --white: #f9fdfe;
+  --white-glass: rgba(249, 253, 254, 0.75);
+  --black-border: rgba(0, 0, 0, 0.1);
+}
+
+
+/* =================================================
+   BODY (main page settings)
+   This controls font, background, and default text
+================================================= */
+
+body {
+  font-family: 'Inter', Arial, Helvetica, sans-serif; /* main website font */
+  background-color: var(--black);   /* default background = black */
+  color: var(--white);              /* default text = white */
+  line-height: 1.6;                 /* space between text lines */
+}
+
+/* =================================================
+   BACKGROUND HELPERS
+   Use these on sections to switch black / white
+================================================= */
+
+.bg-black {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.bg-white {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+/* =================================================
+   TEXT HELPERS
+   Use these when you want to force text color
+================================================= */
+
+.text-black {
+  color: var(--black);
+}
+
+.text-white {
+  color: var(--white);
+}
+
+/* =================================================
+   BASIC LAYOUT HELPERS
+   container = center content
+   section   = vertical spacing between sections
+================================================= */
+
+.container {
+  width: 85%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+/* =================================================
+   BUTTON (GLOBAL GLASS BUTTON STYLE)
+   Use this class on buttons: class="btn"
+================================================= */
+
+.btn {
+  padding: 12px 32px;
+  border-radius: 999px;   /* makes button fully oval */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  background: rgba(0, 0, 0, 0.6);   /* black glass background */
+  backdrop-filter: blur(10px);     /* glass blur effect */
+  -webkit-backdrop-filter: blur(10px);
+
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+
+  transition: all 0.35s ease;      /* smooth animation */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* When mouse is over the button */
+.btn:hover {
+  background: rgba(255, 255, 255, 0.85); /* turns white on hover */
+  color: black;                          /* text becomes black */
+  transform: translateY(-3px);           /* little lift effect */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* When button is clicked */
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* =================================================
+   HEADINGS SYSTEM (h1 to h6)
+   Controls all titles and headings on website
+================================================= */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  margin-bottom: 16px;
+  line-height: 1.2;
+  color: inherit;   /* takes color from section (black/white) */
+}
+
+/* Main hero title */
+h1 {
+  font-size: 52px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+/* Section titles */
+h2 {
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: -0.4px;
+}
+
+/* Feature titles */
+h3 {
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+}
+
+/* Card titles */
+h4 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* Small headings */
+h5 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+h6 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* =================================================
+   PARAGRAPH & NORMAL TEXT
+================================================= */
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: 14px;
+  color: inherit;   /* auto black/white depending on section */
+}
+
+/* Smaller text (footer, captions, etc.) */
+.small-text {
+  font-size: 14px;
+  color: inherit;
+}
+
+/* =================================================
+   LINKS
+================================================= */
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+/* =================================================
+   STRONG / BOLD TEXT
+================================================= */
+
+strong {
+  font-weight: 600;
+}
+
+/* =================================================
+   RESPONSIVE (MOBILE FIXES)
+   Makes headings smaller on mobile screens
+================================================= */
+
+@media (max-width: 768px) {
+  h1 { font-size: 40px; }
+  h2 { font-size: 32px; }
+  h3 { font-size: 26px; }
+  h4 { font-size: 22px; }
+}
+
+
+html {
+  scroll-behavior: smooth;
+}

@@ -1,0 +1,137 @@
+/* =========================================
+   INDUSTRIES SECTION
+========================================= */
+
+.industries-section {
+    background-color: var(--black);
+    color: var(--white);
+  }
+  
+  .industries-container {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 60px;
+  }
+  
+  /* =========================================
+     LEFT: INDUSTRY LIST
+  ========================================= */
+  
+  .industries-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .industry-item {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: inherit;
+    text-align: left;
+    padding: 14px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+  
+    font-size: 15px;
+    font-weight: 500;
+    transition: background 0.25s ease, border 0.25s ease;
+  }
+  
+  .industry-item.active {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.4);
+  }
+  
+  .industry-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+  }
+  
+  /* =========================================
+     RIGHT: DETAILS + IMAGE
+  ========================================= */
+  
+  .industry-details {
+    max-width: 720px;
+  }
+  
+  /* Image container */
+  .industry-image-wrapper {
+    width: 100%;
+    height: 220px;
+    margin-bottom: 24px;
+    border-radius: 16px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.05); /* placeholder */
+  }
+  
+  /* Image itself */
+  .industry-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  
+    /* Smooth fade-in */
+    animation: imageFadeIn 0.6s ease;
+  }
+  
+  @keyframes imageFadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Text */
+  .industry-details h3 {
+    margin-bottom: 14px;
+  }
+  
+  .industry-details p {
+    margin-bottom: 24px;
+    opacity: 0.9;
+  }
+  
+  /* =========================================
+     TAGS
+  ========================================= */
+  
+  .industry-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .industry-tag {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 13px;
+  }
+  
+  /* =========================================
+     RESPONSIVE
+  ========================================= */
+  
+  @media (max-width: 900px) {
+    .industries-container {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+  
+    .industries-list {
+      flex-direction: row;
+      overflow-x: auto;
+    }
+  
+    .industry-item {
+      white-space: nowrap;
+    }
+  
+    .industry-image-wrapper {
+      height: 200px;
+    }
+  }
+  

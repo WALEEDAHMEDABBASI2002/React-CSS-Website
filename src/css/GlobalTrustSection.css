@@ -1,0 +1,146 @@
+/* ==============================
+   GLOBAL TRUST SECTION
+================================ */
+
+.globaltrust {
+  padding: 110px 0;
+}
+
+/* ==============================
+   HEADING
+================================ */
+
+.globaltrust-heading {
+  text-align: center;
+  max-width: 850px;
+  margin: 0 auto 70px auto;
+}
+
+.globaltrust-heading h2 {
+  font-size: 52px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  color: var(--black);
+}
+
+.globaltrust-heading p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--black);
+  opacity: 0.85;
+}
+
+/* ==============================
+   GRID (CARDS)
+================================ */
+
+.globaltrust-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 35px;
+}
+
+/* ==============================
+   CARD DESIGN
+================================ */
+
+.globaltrust-card {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 22px;
+  padding: 55px 30px;
+  text-align: center;
+
+  transition: all 0.3s ease;
+}
+
+.globaltrust-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* ICON CIRCLE */
+.globaltrust-icon {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.06);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 24px;
+  margin: 0 auto 22px auto;
+}
+
+/* CARD TEXT */
+.globaltrust-card h3 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  color: var(--black);
+}
+
+.globaltrust-card p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--black);
+  opacity: 0.85;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+/* ==============================
+   RESPONSIVE DESIGN
+================================ */
+
+/* Laptop / Smaller Desktop */
+@media (max-width: 1200px) {
+  .globaltrust-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .globaltrust {
+    padding: 90px 0;
+  }
+
+  .globaltrust-heading h2 {
+    font-size: 38px;
+  }
+
+  .globaltrust-heading p {
+    font-size: 15px;
+  }
+
+  .globaltrust-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .globaltrust-card {
+    padding: 45px 25px;
+  }
+
+  .globaltrust-card h3 {
+    font-size: 22px;
+  }
+
+  .globaltrust-card p {
+    font-size: 15px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .globaltrust-heading h2 {
+    font-size: 30px;
+  }
+
+  .globaltrust-card {
+    padding: 40px 20px;
+  }
+}

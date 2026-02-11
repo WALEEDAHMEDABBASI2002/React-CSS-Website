@@ -1,0 +1,148 @@
+/* ==============================
+   MISSION SECTION (FEATURE STYLE)
+================================= */
+
+.mission-section {
+  padding: 100px 0;
+}
+
+/* ==============================
+   HEADING AREA
+================================= */
+
+.mission-heading {
+  text-align: center;
+  max-width: 850px;
+  margin: 0 auto 70px auto;
+}
+
+.mission-heading h2 {
+  font-size: 52px;
+  font-weight: 700;
+  color: var(--black);
+  margin-bottom: 18px;
+}
+
+.mission-heading p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--black);
+  opacity: 0.85;
+}
+
+/* ==============================
+   CARDS GRID
+================================= */
+
+.mission-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px;
+  align-items: stretch;
+}
+
+/* ==============================
+   CARD DESIGN
+================================= */
+
+.mission-card {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 18px;
+  padding: 55px 40px;
+
+  transition: all 0.3s ease;
+}
+
+.mission-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* ICON CIRCLE */
+.mission-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 25px auto;
+
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.06);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 24px;
+}
+
+/* CARD TITLE */
+.mission-card h3 {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--black);
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+/* CARD TEXT */
+.mission-card p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--black);
+  opacity: 0.85;
+  text-align: center;
+}
+
+/* ==============================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 1024px) {
+  .mission-heading h2 {
+    font-size: 44px;
+  }
+
+  .mission-heading p {
+    font-size: 16px;
+  }
+
+  .mission-card {
+    padding: 45px 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mission-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .mission-heading h2 {
+    font-size: 38px;
+  }
+
+  .mission-card h3 {
+    font-size: 24px;
+  }
+
+  .mission-card p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mission-section {
+    padding: 80px 0;
+  }
+
+  .mission-heading h2 {
+    font-size: 32px;
+  }
+
+  .mission-heading p {
+    font-size: 15px;
+  }
+
+  .mission-card {
+    padding: 40px 22px;
+  }
+}

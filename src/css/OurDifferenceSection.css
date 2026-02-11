@@ -1,0 +1,149 @@
+/* ===============================
+   OUR DIFFERENCE SECTION
+================================ */
+
+.difference-section {
+  padding: 110px 0;
+  background: var(--black);
+  color: var(--white);
+}
+
+/* ===============================
+   HEADING
+================================ */
+
+.difference-heading {
+  text-align: center;
+  max-width: 850px;
+  margin: 0 auto 70px auto;
+}
+
+.difference-heading h2 {
+  font-size: 52px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  color: var(--white);
+}
+
+.difference-heading p {
+  font-size: 18px;
+  line-height: 1.8;
+  opacity: 0.85;
+  color: var(--white);
+}
+
+/* ===============================
+   GRID
+================================ */
+
+.difference-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 35px;
+}
+
+/* ===============================
+   CARD DESIGN
+================================ */
+
+.difference-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 22px;
+  padding: 55px 30px;
+  text-align: center;
+
+  transition: all 0.3s ease;
+}
+
+.difference-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+/* ICON CIRCLE */
+.difference-icon {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 24px;
+  margin: 0 auto 22px auto;
+}
+
+/* TEXT */
+.difference-card h3 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  color: var(--white);
+}
+
+.difference-card p {
+  font-size: 16px;
+  line-height: 1.8;
+  opacity: 0.85;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+/* ===============================
+   RESPONSIVE DESIGN
+================================ */
+
+/* Medium Laptop */
+@media (max-width: 1200px) {
+  .difference-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .difference-section {
+    padding: 90px 0;
+  }
+
+  .difference-heading h2 {
+    font-size: 38px;
+  }
+
+  .difference-heading p {
+    font-size: 15px;
+  }
+
+  .difference-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .difference-card {
+    padding: 45px 25px;
+  }
+
+  .difference-card h3 {
+    font-size: 22px;
+  }
+
+  .difference-card p {
+    font-size: 15px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .difference-heading h2 {
+    font-size: 30px;
+  }
+
+  .difference-card {
+    padding: 40px 20px;
+  }
+}
