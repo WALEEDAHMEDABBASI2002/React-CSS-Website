@@ -3,6 +3,7 @@ import FeaturesSection from "../sections/FeaturesSection";
 import IndustriesSection from "../sections/IndustriesSection";
 import WhyChooseUsSection from "../sections/WhyChooseUsSection";
 import Footer from "../sections/Footer";
+import FloatingContactButton from "../sections/FloatingContactButton";
 
 
 export default function HomePage() {
@@ -14,6 +15,7 @@ export default function HomePage() {
       <WhyChooseUsSection />
       {/* Your pages */}
       <Footer />
+      <FloatingContactButton />
     </>
   );
 }

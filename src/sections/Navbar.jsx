@@ -18,9 +18,9 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="navbar-container">
 
-        {/* LOGO */}
+        {/* LOGO IMAGE */}
         <div className="logo">
-          AI<span>Bot</span>
+          <img src="../public/logo/frame12.png" alt="AI Bot Logo" className="logo-img" />
         </div>
 
         {/* HAMBURGER (MOBILE) */}

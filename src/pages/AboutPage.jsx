@@ -3,6 +3,7 @@ import MissionSection from "../sections/MissionSection";
 import OurDifferenceSection from "../sections/OurDifferenceSection";
 import GlobalTrustSection from "../sections/GlobalTrustSection";
 import Footer from "../sections/Footer";
+import FloatingContactButton from "../sections/FloatingContactButton";
 
 export default function AboutPage() {
   return (
@@ -12,6 +13,7 @@ export default function AboutPage() {
       <OurDifferenceSection />
       <GlobalTrustSection />
       <Footer />
+      <FloatingContactButton />
     </>
   );
 }

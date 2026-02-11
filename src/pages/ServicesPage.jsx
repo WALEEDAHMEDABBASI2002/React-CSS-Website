@@ -3,6 +3,7 @@ import BotSolutions from "../sections/BotSolutions";
 import PricingSection from "../sections/PricingSection";
 import WhyChooseUsSection from "../sections/WhyChooseUsSection";
 import Footer from "../sections/Footer";
+import FloatingContactButton from "../sections/FloatingContactButton";
 
 
 export default function ServicesPage() {
@@ -13,6 +14,7 @@ export default function ServicesPage() {
       <PricingSection />
       <WhyChooseUsSection />
       <Footer />
+      <FloatingContactButton />
     </>
   );
 }

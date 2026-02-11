@@ -13,7 +13,7 @@
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
 
-  border-bottom: 1px solid rgba(0,0,0,0.08);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 /* ===============================
@@ -32,19 +32,19 @@
 }
 
 /* ===============================
-   LOGO
+   LOGO IMAGE
 ================================ */
 
 .logo {
-  font-size: 22px;
-  font-weight: 700;
-  color: var(--black);
-  cursor: pointer;
-  font-family: inherit;
+  display: flex;
+  align-items: center;
 }
 
-.logo span {
-  font-weight: 500;
+.logo-img {
+  height: 42px;
+  width: auto;
+  object-fit: contain;
+  cursor: pointer;
 }
 
 /* ===============================
@@ -59,13 +59,13 @@
 .nav-links a {
   color: var(--black);
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 600;
   text-decoration: none;
   position: relative;
   font-family: inherit;
 }
 
-/* Active link underline */
+/* Active underline */
 .nav-links a.active::after {
   content: "";
   position: absolute;
@@ -82,12 +82,12 @@
 }
 
 /* ===============================
-   HAMBURGER (HIDDEN DESKTOP)
+   HAMBURGER
 ================================ */
 
 .hamburger {
   display: none;
-  font-size: 26px;
+  font-size: 28px;
   cursor: pointer;
   color: var(--black);
 }
@@ -103,7 +103,7 @@
     display: block;
   }
 
-  /* Mobile menu */
+  /* Hide links by default */
   .nav-links {
     position: absolute;
     top: 70px;
@@ -112,17 +112,32 @@
 
     background: var(--white);
     backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 
     flex-direction: column;
     text-align: center;
-    gap: 20px;
-    padding: 20px 0;
+    gap: 22px;
+    padding: 25px 0;
 
-    transform: translateY(-120%);
-    transition: 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+
+    transition: all 0.3s ease;
   }
 
+  /* Show when open */
   .nav-links.open {
+    opacity: 1;
+    visibility: visible;
     transform: translateY(0);
+  }
+
+  .nav-links a {
+    font-size: 16px;
+  }
+
+  .logo-img {
+    height: 38px;
   }
 }

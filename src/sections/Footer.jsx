@@ -1,4 +1,5 @@
 import "../css/Footer.css";
+import { NavLink } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -37,8 +38,8 @@ export default function Footer() {
             <ul>
               <li>AI Chat Bots</li>
               <li>AI Call Bots</li>
-              <li>Voice Assistants</li>
-              <li>Automation Solutions</li>
+              <li>Multilingual Bots</li>
+              <li>Custom Bot Setup</li>
             </ul>
           </div>
 
@@ -56,14 +57,25 @@ export default function Footer() {
           <div className="footer-column">
             <h5>Company</h5>
             <ul>
-              <li>About Us</li>
-              <li>Careers</li>
-              <li>Blog</li>
-              <li>Contact</li>
+              <li>
+              <NavLink to="/">Home</NavLink>
+            </li>
+
+            <li>
+              <NavLink to="/about">About</NavLink>
+            </li>
+
+            <li>
+              <NavLink to="/services">Services</NavLink>
+            </li>
+
+            <li>
+              <NavLink to="/contact">Contact</NavLink>
+            </li>
             </ul>
           </div>
 
-          <div className="footer-column">
+          {/* <div className="footer-column">
             <h5>Resources</h5>
             <ul>
               <li>Documentation</li>
@@ -71,7 +83,7 @@ export default function Footer() {
               <li>Support</li>
               <li>Security</li>
             </ul>
-          </div>
+          </div> */}
 
           <div className="footer-column">
             <h5>Legal</h5>
@@ -90,7 +102,7 @@ export default function Footer() {
             BOTTOM COPYRIGHT
         ========================= */}
         <div className="footer-bottom">
-          <p>© {new Date().getFullYear()} AI Bot Solutions. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} All rights reserved by BPOS Digital LLC.</p>
         </div>
 
       </div>
