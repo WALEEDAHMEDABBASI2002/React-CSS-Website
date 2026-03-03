@@ -1,20 +1,31 @@
-# React + Vite
+# React Landing Page Template
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**
 
-Currently, two official plugins are available:
+# https://github.com/WALEEDAHMEDABBASI2002/React-CSS-Website
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**
 
 
+### <a href="https://aibotwebsite.netlify.app/">LIVE DEMO</a> 
 
-npm install react-router-dom
+## Description
+This is a ReactJS based landing page template, fit for a startup company/service with a one page view.
+All 'visual' data can be easily modified by changing the data.json file.
+
+## Make it Yours!
+### 1. Preps
+You will need to have <a href="https://nodejs.org/">Node JS</a> installed on your pc. 
+
+### 2. Clone Files
+After cloning the files, you will have to run ```yarn``` followed by ```yarn start``` in the CLI
+### 3. Add your own data 
+Change the data in the ```data.json``` file as well as add any images to ```public/img/```
+You can also change styles by modifying the ```public/css``` files.
+If you need the contact form to work, you also need to create an EmailJS account, and modify the ```src/components/contact.jsx``` file to replace your own service ID, template ID and Public Key
+
+## Like this project?
+<a href="https://www.linkedin.com/in/waleed-ahmed-abbasi-b74a55308/">Follow me</a>
+
+
+##### Waleed Ahmed Abbasi
