@@ -4,14 +4,14 @@ export default function HeroContact() {
 
   // Scroll to next section
   const scrollToNextSection = () => {
-    const nextSection = document.getElementById("contact-form");
+    const nextSection = document.getElementById("contact");
 
     if (nextSection) {
       nextSection.scrollIntoView({
         behavior: "smooth"
       });
     }
-  };
+  }
 
   return (
     <section id="hero" className="hero-contact">
@@ -27,10 +27,11 @@ export default function HeroContact() {
         <h1>Contact Our Team</h1>
 
         <p>
-          Let’s discuss how AI chat and call bots can help your
+          Let’s discuss how AI chat and call agents can help your
           business grow globally.
         </p>
 
+        {/* CTA Button */}
         <button
           className="btn hero-contact-btn hero-btn-anim"
           onClick={scrollToNextSection}

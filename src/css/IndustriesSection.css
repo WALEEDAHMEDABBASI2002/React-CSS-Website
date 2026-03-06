@@ -111,27 +111,69 @@
     font-size: 13px;
   }
   
-  /* =========================================
-     RESPONSIVE
-  ========================================= */
-  
-  @media (max-width: 900px) {
-    .industries-container {
-      grid-template-columns: 1fr;
-      gap: 40px;
-    }
-  
-    .industries-list {
-      flex-direction: row;
-      overflow-x: auto;
-    }
-  
-    .industry-item {
-      white-space: nowrap;
-    }
-  
-    .industry-image-wrapper {
-      height: 200px;
-    }
+ /* =========================================
+   TABLET RESPONSIVE
+========================================= */
+
+@media (max-width: 1024px) {
+
+  .industries-container {
+    grid-template-columns: 260px 1fr;
+    gap: 40px;
   }
-  
+
+  .industry-image-wrapper {
+    height: 200px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .industries-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .industries-list {
+
+    display: flex;
+    flex-direction: row;
+
+    gap: 10px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    padding-bottom: 10px;
+
+    width: 100%;
+
+    -webkit-overflow-scrolling: touch;
+
+    scrollbar-width: none;
+  }
+
+  .industries-list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .industry-item {
+
+    flex: 0 0 auto;      /* 🔥 prevents shrinking */
+
+    white-space: nowrap;
+
+    font-size: 14px;
+
+    padding: 10px 16px;
+
+  }
+
+}
+

@@ -1,5 +1,5 @@
 /* ===============================
-   HERO ABOUT SECTION
+   HERO SERVICES SECTION
 ================================ */
 
 .hero-services {
@@ -9,11 +9,13 @@
 
   display: flex;
   align-items: center;
-  justify-content: center; /* ✅ CENTER MIDDLE */
+  justify-content: center;
 
-  padding-top: 80px; /* space for fixed navbar */
+  padding-top: 100px;
+
   overflow: hidden;
 }
+
 
 /* ===============================
    BACKGROUND IMAGE
@@ -23,24 +25,17 @@
   position: absolute;
   inset: 0;
 
-  background-image: url("/hero/HeroServices.png");
+  background-image: url("/hero/heroooo.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
   transform: scale(1.05);
-  animation: slowZoom 10s ease-in-out infinite alternate;
+  
 }
 
-/* Smooth zoom effect */
-@keyframes slowZoom {
-  0% {
-    transform: scale(1.05);
-  }
-  100% {
-    transform: scale(1.12);
-  }
-}
+
+
 
 /* ===============================
    OVERLAY
@@ -49,34 +44,36 @@
 .hero-services-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0,0,0,0.6);
 }
 
+
 /* ===============================
-   CONTENT
+   HERO CONTENT
 ================================ */
 
 .hero-services-content {
   position: relative;
   z-index: 2;
 
+  text-align: center;
+
   max-width: 900px;
   padding: 0 24px;
 
-  text-align: center; /* ✅ CENTER TEXT */
   color: var(--white);
 }
 
 .hero-services-content h1 {
-  margin-bottom: 18px;
+  margin-bottom: 30px;
 }
 
 .hero-services-content p {
-  max-width: 700px;
-  margin: 0 auto 35px auto;
+  max-width: 1000px;
+  margin: 0 auto 55px auto;
   opacity: 0.9;
-  line-height: 1.7;
 }
+
 
 /* ===============================
    BUTTON
@@ -86,10 +83,11 @@
   padding: 14px 38px;
   border-radius: 40px;
 
-  background: transparent;         /* ✅ transparent */
-  border: 1px solid var(--white);  /* ✅ white border */
-  color: var(--white);             /* ✅ white text */
+  background: transparent;
+  border: 1px solid var(--white);
+  color: var(--white);
 }
+
 
 /* ===============================
    ANIMATIONS
@@ -122,19 +120,21 @@
   }
 }
 
+
 /* ===============================
    RESPONSIVE
 ================================ */
 
-@media (max-width: 1024px) {
+@media (max-width:1024px) {
   .hero-services-content h1 {
-    font-size: 55px;
+    font-size: 52px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width:768px) {
+
   .hero-services {
-    padding-top: 70px;
+    padding-top: 80px;
   }
 
   .hero-services-content h1 {
@@ -144,13 +144,10 @@
   .hero-services-content p {
     font-size: 15px;
   }
-
-  .hero-services-btn {
-    padding: 12px 30px;
-  }
 }
 
-@media (max-width: 480px) {
+@media (max-width:480px) {
+
   .hero-services-content h1 {
     font-size: 34px;
   }

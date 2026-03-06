@@ -29,10 +29,14 @@
 ================================================= */
 
 body {
-  font-family: 'Inter', Arial, Helvetica, sans-serif; /* main website font */
-  background-color: var(--black);   /* default background = black */
-  color: var(--white);              /* default text = white */
-  line-height: 1.6;                 /* space between text lines */
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  /* main website font */
+  background-color: var(--black);
+  /* default background = black */
+  color: var(--white);
+  /* default text = white */
+  line-height: 1.6;
+  /* space between text lines */
 }
 
 /* =================================================
@@ -86,11 +90,14 @@ body {
 
 .btn {
   padding: 12px 32px;
-  border-radius: 999px;   /* makes button fully oval */
+  border-radius: 999px;
+  /* makes button fully oval */
   border: 1px solid rgba(255, 255, 255, 0.3);
 
-  background: rgba(0, 0, 0, 0.6);   /* black glass background */
-  backdrop-filter: blur(10px);     /* glass blur effect */
+  background: rgba(0, 0, 0, 0.6);
+  /* black glass background */
+  backdrop-filter: blur(10px);
+  /* glass blur effect */
   -webkit-backdrop-filter: blur(10px);
 
   color: white;
@@ -98,15 +105,19 @@ body {
   font-weight: 500;
   cursor: pointer;
 
-  transition: all 0.35s ease;      /* smooth animation */
+  transition: all 0.35s ease;
+  /* smooth animation */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
 
 /* When mouse is over the button */
 .btn:hover {
-  background: rgba(255, 255, 255, 0.85); /* turns white on hover */
-  color: black;                          /* text becomes black */
-  transform: translateY(-3px);           /* little lift effect */
+  background: rgba(255, 255, 255, 0.85);
+  /* turns white on hover */
+  color: black;
+  /* text becomes black */
+  transform: translateY(-3px);
+  /* little lift effect */
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
 }
 
@@ -121,11 +132,17 @@ body {
    Controls all titles and headings on website
 ================================================= */
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   margin-bottom: 16px;
   line-height: 1.2;
-  color: inherit;   /* takes color from section (black/white) */
+  color: inherit;
+  /* takes color from section (black/white) */
 }
 
 /* Main hero title */
@@ -175,7 +192,8 @@ p {
   font-weight: 400;
   line-height: 1.6;
   margin-bottom: 14px;
-  color: inherit;   /* auto black/white depending on section */
+  color: inherit;
+  /* auto black/white depending on section */
 }
 
 /* Smaller text (footer, captions, etc.) */
@@ -212,12 +230,28 @@ strong {
 ================================================= */
 
 @media (max-width: 768px) {
-  h1 { font-size: 40px; }
-  h2 { font-size: 32px; }
-  h3 { font-size: 26px; }
-  h4 { font-size: 22px; }
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  h3 {
+    font-size: 26px;
+  }
+
+  h4 {
+    font-size: 22px;
+  }
 }
 
+
+html,
+body {
+  overflow-x: hidden;
+}
 
 html {
   scroll-behavior: smooth;

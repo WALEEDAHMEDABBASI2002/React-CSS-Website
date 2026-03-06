@@ -3,89 +3,72 @@
 ================================================== */
 
 .footer {
-    padding: 60px 0 40px;
-    font-size: 13px;
-    color: rgba(255, 255, 255, 0.75);
+  padding: 15px 0;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+
+/* CENTER CONTENT */
+
+.footer .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;        /* prevents overflow on small screens */
+  text-align: center;
+}
+
+
+/* ==================================================
+   COPYRIGHT TEXT
+================================================== */
+
+.footer-bottom {
+  width: 100%;
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.footer-bottom p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+
+/* ==================================================
+   TABLET
+================================================== */
+
+@media (max-width: 768px) {
+
+  .footer {
+    padding: 18px 0;
   }
-  
-  /* ==================================================
-     TOP LEGAL / INFO TEXT
-     IMPORTANT: NO MAX-WIDTH
-  ================================================== */
-  
-  .footer-legal p {
-    line-height: 1.7;
-    margin-bottom: 14px;
-  }
-  
-  /* Divider line */
-  .footer-divider {
-    border: none;
-    border-top: 1px solid rgba(255, 255, 255, 0.15);
-    margin: 30px 0;
-  }   
-  
-  /* ==================================================
-     FOOTER LINKS GRID
-  ================================================== */
-  
-  .footer-links {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 230px;
-  }
-  
-  .footer-column h5 {
-    color: var(--white);
-    font-size: 13px;
-    font-weight: 600;
-    margin-bottom: 14px;
-  }
-  
-  .footer-column ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .footer-column li {
-    margin-bottom: 10px;
-    cursor: pointer;
-    transition: opacity 0.2s ease;
-  }
-  
-  .footer-column li:hover {
-    opacity: 0.7;
-  }
-  
-  /* ==================================================
-     BOTTOM COPYRIGHT (CENTERED)
-  ================================================== */
-  
+
   .footer-bottom {
-    text-align: center;
-    font-size: 12px;
-    opacity: 0.7;
+    font-size: 11px;
   }
-  
-  /* ==================================================
-     RESPONSIVE (TABLET)
-  ================================================== */
-  
-  @media (max-width: 1024px) {
-    .footer-links {
-      grid-template-columns: repeat(3, 1fr);
-      gap: 30px;
-    }
+
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media (max-width: 480px) {
+
+  .footer {
+    padding: 20px 10px;
   }
-  
-  /* ==================================================
-     RESPONSIVE (MOBILE)
-  ================================================== */
-  
-  @media (max-width: 600px) {
-    .footer-links {
-      grid-template-columns: 1fr;
-    }
+
+  .footer-bottom {
+    font-size: 11px;
   }
-  
+
+  .footer-bottom p {
+    padding: 0 10px;   /* prevents text touching screen edges */
+  }
+
+}

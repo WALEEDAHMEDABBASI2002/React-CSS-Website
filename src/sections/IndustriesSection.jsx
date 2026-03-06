@@ -7,7 +7,7 @@ const industries = [
     title: "Call Centers",
     description:
       "Automate inbound and outbound calls, reduce wait times, and handle high call volumes with AI-powered voice agents.",
-    tags: ["AI Call Bots", "Voice AI", "IVR Automation", "Multi-Language"],
+    tags: ["AI Call Agents", "Voice AI", "Branding", "Multi-Language"],
     image: "/industries/Industries2.avif",
   },
   {
@@ -15,7 +15,7 @@ const industries = [
     title: "E-commerce & Retail",
     description:
       "Improve conversions and support with AI chat and call bots for order tracking, returns, and customer inquiries.",
-    tags: ["AI Chat Bots", "Order Support", "24/7 Availability"],
+    tags: ["AI Chat Agents", "Order Support", "24/7 Availability", "Social Media Posts"],
     image: "/industries/Industries3.avif",
   },
   {
@@ -23,7 +23,7 @@ const industries = [
     title: "Healthcare",
     description:
       "Automate patient calls, appointment scheduling, and support queries while ensuring compliance and data security.",
-    tags: ["Patient Support", "AI Call Bots", "Compliance Ready"],
+    tags: ["Patient Support", "SoftwareDevelopment", "AI Call Agents", "Compliance Ready"],
     image: "/industries/Industries4.jpg",
   },
   {
@@ -31,7 +31,7 @@ const industries = [
     title: "Real Estate",
     description:
       "Handle property inquiries, lead qualification, and follow-ups automatically with intelligent AI assistants.",
-    tags: ["Lead Qualification", "AI Chat Bots", "CRM Integration"],
+    tags: ["Lead Qualification", "Social Media Posts", "AI Chat Agents", "CRM Integration"],
     image: "/industries/Industries5.avif",
   },
   {
@@ -39,7 +39,7 @@ const industries = [
     title: "Customer Support",
     description:
       "Reduce ticket volume and response times by letting AI handle common questions and support requests.",
-    tags: ["AI Chat Bots", "Support Automation", "24/7 Service"],
+    tags: ["AI Chat Agents", "Support Automation", "24/7 Service", "Content Writing"],
     image: "/industries/Industries6.avif",
   },
   {
@@ -47,7 +47,7 @@ const industries = [
     title: "Logistics",
     description:
       "Automate shipment tracking, service scheduling, and customer updates with AI-powered communication.",
-    tags: ["Status Updates", "Voice Automation", "System Integration"],
+    tags: ["Status Updates", "Voice Automation", "System Integration", "Web Development"],
     image: "/industries/Industries1.jpg",
   },
   {
@@ -55,7 +55,7 @@ const industries = [
     title: "Fashion & Apparel",
     description:
       "Enhance customer engagement with AI assistants for product discovery, sizing help, and order support.",
-    tags: ["Product Assistance", "AI Chat Bots", "Customer Engagement"],
+    tags: ["Product Assistance", "AI Chat Agents", "Customer Engagement", "Branding", "Social Media Posts"],
     image: "/industries/Industries7.jpg",
   },
 ];

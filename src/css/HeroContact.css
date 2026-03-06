@@ -15,6 +15,7 @@
   overflow: hidden;
 }
 
+
 /* ===============================
    BACKGROUND IMAGE
 ================================ */
@@ -23,7 +24,7 @@
   position: absolute;
   inset: 0;
 
-  background-image: url("/hero/HeroContact.png");
+  background-image: url("/hero/herooo.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -88,7 +89,7 @@
 
   background: transparent;         /* ✅ transparent */
   border: 1px solid var(--white);  /* ✅ white border */
-  color: var(--white);             /* ✅ white text */
+  color: var(--white)!important;             /* ✅ white text */
 }
 
 /* ===============================

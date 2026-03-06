@@ -1,0 +1,134 @@
+.designing{
+  color: var(--white);
+}
+
+.section-header{
+  text-align:center;
+  max-width:800px;
+  margin:10 auto 60px auto;
+}
+
+/* SUBTITLE */
+
+.section-subtitle{
+  text-align:center;
+  max-width:720px;
+  margin:0 auto 1px auto;
+  opacity:0.9;
+  font-size:17px;
+}
+
+
+/* GRID */
+
+.design-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:35px;
+}
+
+
+/* CARD */
+
+.design-card{
+  background:#111;
+  padding:45px 35px;
+  border-radius:18px;
+  border:1px solid rgba(255,255,255,0.08);
+
+  text-align:center;
+
+  height:320px;
+
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+
+  transition:0.3s;
+}
+
+.design-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 12px 30px rgba(0,0,0,0.4);
+}
+
+
+/* ICON */
+
+.design-icon{
+  width:70px;
+  height:70px;
+
+  min-width:70px;
+  min-height:70px;
+
+  border-radius:50%;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  margin-bottom:20px;
+
+  flex-shrink:0; /* prevents oval issue */
+}
+
+/* COLORED ICON BACKGROUNDS */
+
+.graphic{
+  background:#ff6b6b20;
+  color:#ff6b6b;
+}
+
+.branding{
+  background:#4dabf720;
+  color:#4dabf7;
+}
+
+.social{
+  background:#51cf6620;
+  color:#51cf66;
+}
+
+.ui{
+  background:#ffd43b20;
+  color:#ffd43b;
+}
+
+
+/* TEXT */
+
+.design-card h4{
+  font-size:22px;
+  font-weight:800;
+  margin-bottom:12px;
+}
+
+.design-card p{
+  font-size:15px;
+  line-height:1.7;
+  opacity:0.85;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width:1100px){
+
+  .design-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+}
+
+@media (max-width:600px){
+
+  .design-grid{
+    grid-template-columns:1fr;
+  }
+
+  .design-card{
+    height:auto;
+  }
+
+}

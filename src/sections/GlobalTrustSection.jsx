@@ -9,7 +9,7 @@ export default function GlobalTrustSection() {
         <div className="globaltrust-heading">
           <h2>Built for Global Businesses</h2>
           <p>
-            Our AI chat and call bot solutions are designed with a global mindset —
+            Our AI chat and call agent solutions are designed with a global mindset —
             supporting businesses across regions, industries, and time zones with
             consistent performance and reliability.
           </p>
@@ -29,7 +29,7 @@ export default function GlobalTrustSection() {
 
           <div className="globaltrust-card">
             <div className="globaltrust-icon">⏰</div>
-            <h3>Always Available</h3>
+            <h3>Always <br /> Available</h3>
             <p>
               24/7 AI-driven interactions ensure your business never misses a
               customer inquiry or opportunity.

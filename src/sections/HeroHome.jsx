@@ -42,10 +42,10 @@ export default function HeroHome() {
 
       {/* Content */}
       <div className="hero-content animate-hero">
-        <h1>AI Bot Company</h1>
+        <h1>BPOS Digital</h1>
 
         <p>
-          Intelligent AI call and chat bots that automate conversations,
+          Intelligent AI call and chat agents that automate conversations,
           increase efficiency, and scale businesses globally.
         </p>
 

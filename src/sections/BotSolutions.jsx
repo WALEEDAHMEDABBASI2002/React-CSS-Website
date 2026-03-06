@@ -3,60 +3,83 @@ import { MessageSquare, PhoneCall, Globe, Settings } from "lucide-react";
 
 export default function BotSolutions() {
   return (
-    <section className="section bg-white bot-solutions">
+    <section id="botSolution" className="section bg-white bot-solutions">
+
       <div className="container">
 
-        <h2 className="center-title">Our AI Bot Solutions</h2>
+        {/* HEADER */}
+        <div className="section-header">
+          <h2>Our AI Agent Solutions</h2>
 
+          <p>
+            We build enterprise-ready AI call and chat solutions designed
+            for scale, reliability, and real-world business impact.
+          </p>
+        </div>
+
+
+        {/* CARDS */}
         <div className="solutions-grid">
 
           <div className="solution-card">
-            <div className="solution-icon">
-              <MessageSquare size={26} />
-            </div>
-            <h4>AI Chatbots</h4>
-            <p>
-              Smart website and WhatsApp bots that respond instantly
-              and capture leads automatically.
-            </p>
-          </div>
+  <div className="solution-icon chat">
+    <MessageSquare size={28}/>
+  </div>
+
+  <h4>AI Chat<br/> Agents</h4>
+
+  <p>
+    Smart website and WhatsApp agents that respond instantly
+    and capture leads automatically.
+  </p>
+</div>
+
 
           <div className="solution-card">
-            <div className="solution-icon">
-              <PhoneCall size={26} />
-            </div>
-            <h4>AI Call Bots</h4>
-            <p>
-              Human-like voice bots that handle inbound and outbound
-              calls 24/7 without fatigue.
-            </p>
-          </div>
+  <div className="solution-icon call">
+    <PhoneCall size={28}/>
+  </div>
+
+  <h4>AI Call <br/>Agents</h4>
+
+  <p>
+    Human-like voice agents that handle inbound and outbound
+    calls 24/7 without fatigue.
+  </p>
+</div>
+
 
           <div className="solution-card">
-            <div className="solution-icon">
-              <Globe size={26} />
-            </div>
-            <h4>Multilingual Bots</h4>
-            <p>
-              Serve customers globally in multiple languages with
-              natural conversations.
-            </p>
-          </div>
+  <div className="solution-icon globe">
+    <Globe size={28}/>
+  </div>
+
+  <h4>Multilingual Support</h4>
+
+  <p>
+    Serve customers worldwide in their native language with
+    AI trained for global communication.
+  </p>
+</div>
+
 
           <div className="solution-card">
-            <div className="solution-icon">
-              <Settings size={26} />
-            </div>
-            <h4>Custom Bot Setup</h4>
-            <p>
-              Bots tailored to your business, industry, and customer
-              journey.
-            </p>
-          </div>
+  <div className="solution-icon custom">
+    <Settings size={28}/>
+  </div>
+
+  <h4>Custom Agent Setup</h4>
+
+  <p>
+    Agents tailored to your business, industry,
+    and customer journey.
+  </p>
+</div>
 
         </div>
 
       </div>
+
     </section>
   );
 }

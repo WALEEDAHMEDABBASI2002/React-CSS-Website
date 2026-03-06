@@ -55,7 +55,7 @@ export default function WhyChooseUsSection() {
 
           <div className="why-card">
             <div className="why-icon">📈</div>
-            <h4>Built to Scale</h4>
+            <h4>Built to <br/>Scale</h4>
             <p>
               From startups to enterprises, our infrastructure scales
               effortlessly with demand.

@@ -7,10 +7,10 @@ export default function FeaturesSection() {
 
         {/* Section Header */}
         <div className="features-header">
-          <h2>AI Solutions That Work for Your Business</h2>
+          <h2>Services We Provide</h2>
           <p>
-            Our AI-powered call and chat bots automate conversations, reduce
-            costs, and help businesses scale globally.
+            Explore our international services tailored to support 
+            businesses around the world.
           </p>
         </div>
 
@@ -25,7 +25,7 @@ export default function FeaturesSection() {
                 <path d="M21 15a4 4 0 0 1-4 4H7l-4 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z" />
               </svg>
             </div>
-            <h4>AI Chat Bots</h4>
+            <h4>AI Chat Agents</h4>
             <p>
               Automate customer conversations across websites, apps, and
               messaging platforms with human-like AI responses.
@@ -40,7 +40,7 @@ export default function FeaturesSection() {
                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.8 19.8 0 0 1 3.1 5.18 2 2 0 0 1 5 3h3a2 2 0 0 1 2 1.72c.12.86.32 1.7.6 2.5a2 2 0 0 1-.45 2.11L9.1 10.9a16 16 0 0 0 6 6l1.57-1.05a2 2 0 0 1 2.11-.45c.8.28 1.64.48 2.5.6A2 2 0 0 1 22 16.92z" />
               </svg>
             </div>
-            <h4>AI Call Bots</h4>
+            <h4>AI Call Agents</h4>
             <p>
               Handle inbound and outbound calls automatically using natural,
               intelligent voice conversations.
@@ -55,11 +55,12 @@ export default function FeaturesSection() {
                 <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 0c2.5 2.7 4 6.3 4 10s-1.5 7.3-4 10c-2.5-2.7-4-6.3-4-10s1.5-7.3 4-10Z" />
               </svg>
             </div>
-            <h4>Multi-Language Support</h4>
-            <p>
-              Serve customers worldwide in their native language with
-              AI trained for global communication.
-            </p>
+            <h4>Graphic Designing</h4>
+              <p>
+               Our global team of certified designers creates premium,
+               custom designs tailored to your needs — helping your brand
+               stand out and make a lasting impact.
+              </p>
           </div>
 
           {/* Feature 4 */}
@@ -72,7 +73,7 @@ export default function FeaturesSection() {
             </div>
             <h4>24/7 Availability</h4>
             <p>
-              Never miss a lead or support request. Your AI bots work
+              Never miss a lead or support request. Your AI agents work
               nonstop, every day of the year.
             </p>
           </div>

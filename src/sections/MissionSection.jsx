@@ -2,53 +2,62 @@ import "../css/MissionSection.css";
 
 export default function MissionSection() {
   return (
-    <section className="mission-section section bg-white">
-      <div className="container">
+    <section className="mission-section">
 
-        {/* HEADING */}
-        <div className="mission-heading">
-          <h2>Our Mission & Vision</h2>
+      <div className="mission-grid">
+
+        {/* MISSION TEXT SIDE */}
+        <div className="mission-content">
+
+          <h2 className="mission-heading">Our Mission</h2>
 
           <p>
-            We are committed to transforming global business communication
-            through powerful AI call and chat bot solutions designed for
-            reliability, efficiency, and growth.
+            Our mission is to help businesses communicate smarter by delivering reliable 
+            AI-powered call and chat agents, combined with modern UI/UX and graphic design 
+            solutions that elevate digital experiences.
           </p>
+
+          <p>
+            We focus on building intelligent automation and impactful design that enable 
+            companies to scale operations, respond instantly to customers, and present powerful 
+            digital products with consistency across global markets.
+          </p>
+
         </div>
 
-        {/* CARDS */}
-        <div className="mission-cards">
+        {/* MISSION IMAGE */}
+        <div className="mission-image mission-yellow"></div>
 
-          {/* MISSION CARD */}
-          <div className="mission-card">
-            <div className="mission-icon">🎯</div>
+      </div>
 
-            <h3>Our Mission</h3>
 
-            <p>
-              Our mission is to help businesses communicate smarter by delivering
-              reliable AI-powered call and chat bot solutions that automate
-              conversations, reduce workload, and improve customer engagement
-              worldwide.
-            </p>
-          </div>
 
-          {/* VISION CARD */}
-          <div className="mission-card">
-            <div className="mission-icon">🚀</div>
+      <div className="mission-grid">
 
-            <h3>Our Vision</h3>
+        {/* VISION IMAGE */}
+        <div className="mission-image mission-orange"></div>
 
-            <p>
-              We envision a future where businesses of all sizes can scale
-              globally without communication barriers — powered by intelligent,
-              always-available AI assistants built for real-world customer needs.
-            </p>
-          </div>
+        {/* VISION TEXT */}
+        <div className="mission-content">
+
+          <h2 className="mission-heading">Our Vision</h2>
+
+          <p>
+            We envision a future where businesses of every size can grow globally without 
+            communication barriers — supported by intelligent AI agents and user-centered 
+            design solutions built for modern digital interactions.
+          </p>
+
+          <p>
+            Our goal is to transform how companies connect with customers by blending advanced 
+            AI technology, intuitive design, and reliable automation that deliver efficiency, 
+            scalability, and meaningful engagement.
+          </p>
 
         </div>
 
       </div>
+
     </section>
   );
 }

@@ -10,7 +10,7 @@ export default function OurDifferenceSection() {
           <h2>What Makes Us Different</h2>
           <p>
             We are a product-focused AI company specializing exclusively in intelligent
-            chat bots and call bots — built for real businesses operating at scale.
+            chat agents and call agents — built for real businesses operating at scale.
           </p>
         </div>
 
@@ -22,7 +22,7 @@ export default function OurDifferenceSection() {
             <h3>Focused Expertise</h3>
             <p>
               We don’t do generic automation. Our entire focus is on AI-powered
-              chat and call bots that handle real customer conversations reliably.
+              chat and call agents that handle real customer conversations reliably.
             </p>
           </div>
 
@@ -39,7 +39,7 @@ export default function OurDifferenceSection() {
             <div className="difference-icon">💼</div>
             <h3>Business-First Design</h3>
             <p>
-              Every bot is designed around real business workflows — customer support,
+              Every agent is designed around real business workflows — customer support,
               sales inquiries, lead handling, and follow-ups.
             </p>
           </div>
@@ -48,7 +48,7 @@ export default function OurDifferenceSection() {
             <div className="difference-icon">🌍</div>
             <h3>Global Ready</h3>
             <p>
-              Our AI bots are built to support international operations, multi-language
+              Our AI agents are built to support international operations, multi-language
               use cases, and round-the-clock availability.
             </p>
           </div>

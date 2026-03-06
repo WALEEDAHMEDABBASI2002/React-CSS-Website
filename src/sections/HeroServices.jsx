@@ -1,43 +1,51 @@
+import { useRef } from "react";
 import "../css/HeroServices.css";
 
 export default function HeroServices() {
 
+  const heroRef = useRef(null);
+
   // Scroll to next section
   const scrollToNextSection = () => {
-    const nextSection = document.querySelector(".hero-services + section");
+    const nextSection = document.getElementById("botSolution");
 
     if (nextSection) {
       nextSection.scrollIntoView({
-        behavior: "smooth",
-        block: "start"
+        behavior: "smooth"
       });
     }
   };
 
   return (
-    <section id="hero" className="hero-services">
+    <section ref={heroRef} className="hero-services">
 
       {/* BACKGROUND IMAGE */}
       <div className="hero-services-bg"></div>
 
-      {/* DARK OVERLAY */}
+      {/* OVERLAY */}
       <div className="hero-services-overlay"></div>
 
       {/* CONTENT */}
       <div className="hero-services-content fade-in-up">
-        <h1>AI Bot Company</h1>
+
+        <h1>Automate Conversations. <br/>Elevate Your Brand.</h1>
 
         <p>
-          Intelligent AI call and chat bots that automate conversations,
-          increase efficiency, and scale businesses globally.
+          AI automation meets world-class design. We build AI call 
+          and chat agents that handle conversations at scale while our 
+          global design team crafts powerful visual experiences—from brand 
+          identity to digital graphics—helping businesses communicate better 
+          and grow faster.
         </p>
 
+        {/* CTA Button */}
         <button
           className="btn hero-services-btn hero-btn-anim"
           onClick={scrollToNextSection}
         >
-          Explore Solutions
+          Explore Services
         </button>
+
       </div>
 
     </section>

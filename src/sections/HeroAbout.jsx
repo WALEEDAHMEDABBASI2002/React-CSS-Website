@@ -2,7 +2,6 @@ import "../css/HeroAbout.css";
 
 export default function HeroAbout() {
 
-  // Scroll to next section
   const scrollToNextSection = () => {
     const nextSection = document.querySelector(".hero-about + section");
 
@@ -17,18 +16,18 @@ export default function HeroAbout() {
   return (
     <section id="hero" className="hero-about">
 
-      {/* Background Image */}
+      {/* Parallax Background */}
       <div className="hero-about-bg"></div>
 
-      {/* Dark Overlay */}
+      {/* Overlay */}
       <div className="hero-about-overlay"></div>
 
       {/* Content */}
       <div className="hero-about-content fade-in-up">
-        <h1 className="hero-title">About AI Bot Company</h1>
+        <h1 className="hero-title">About BPOS Digital</h1>
 
         <p className="hero-subtitle">
-          We build intelligent AI call and chat bot solutions designed
+          We build intelligent AI call and chat agent solutions designed
           for businesses that operate globally and scale confidently.
         </p>
 
