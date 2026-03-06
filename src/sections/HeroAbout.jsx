@@ -1,6 +1,20 @@
+import { useRef, useEffect } from "react";
 import "../css/HeroAbout.css";
 
 export default function HeroAbout() {
+
+  const videoRef = useRef(null);
+
+  // Pause video if user prefers reduced motion
+  useEffect(() => {
+    const prefersReducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)"
+    ).matches;
+
+    if (prefersReducedMotion && videoRef.current) {
+      videoRef.current.pause();
+    }
+  }, []);
 
   const scrollToNextSection = () => {
     const nextSection = document.querySelector(".hero-about + section");
@@ -16,11 +30,20 @@ export default function HeroAbout() {
   return (
     <section id="hero" className="hero-about">
 
-      {/* Parallax Background */}
-      <div className="hero-about-bg"></div>
+      {/* Background Video */}
+       <video
+        ref={videoRef}
+        className="hero-video"
+        src="/hero/hero.mp4"
+        autoPlay
+        loop
+        muted
+        playsInline
+        preload="none"
+      />
 
       {/* Overlay */}
-      <div className="hero-about-overlay"></div>
+      <div className="hero-overlay"></div>
 
       {/* Content */}
       <div className="hero-about-content fade-in-up">

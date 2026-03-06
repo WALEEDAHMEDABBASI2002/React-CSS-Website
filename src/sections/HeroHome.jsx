@@ -30,7 +30,7 @@ export default function HeroHome() {
       <video
         ref={videoRef}
         className="hero-video"
-        src="/hero/Hero1.mp4"
+        src="/hero/hero2.mp4"
         autoPlay
         loop
         muted

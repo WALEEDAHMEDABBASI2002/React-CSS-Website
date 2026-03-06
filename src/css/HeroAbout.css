@@ -9,18 +9,18 @@
 
   display:flex;
   align-items:center;
-  justify-content:center;
+  justify-content:center; }
 
-  padding-top:80px;
-  overflow:hidden;
-}
+  /*padding-top:80px;
+  overflow:hidden;*/
+
 
 
 /* ===============================
    PARALLAX BACKGROUND
 ================================ */
 
-.hero-about-bg{
+/*.hero-about-bg{
   position:absolute;
   top:-20%;
   left:0;
@@ -36,30 +36,47 @@
 
   will-change:transform;
   z-index:0;
-}
+}*/
 
 
 /* Smooth scroll parallax illusion */
 
-.hero-about{
+/*.hero-about{
   perspective:1px;
 }
 
 .hero-about-bg{
   transform:translateZ(-1px) scale(2);
-}
+}*/
 
 
-/* ===============================
-   OVERLAY
-================================ */
-
-.hero-about-overlay{
-  position:absolute;
-  inset:0;
-  background:rgba(0,0,0,0.6);
-  z-index:1;
-}
+/* =========================================
+     VIDEO BACKGROUND
+  ========================================= */
+  
+  .hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+  
+    z-index: 1;
+  }
+  
+  /* =========================================
+     OVERLAY FOR READABILITY
+  ========================================= */
+  
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 2;
+  }
 
 
 /* ===============================
